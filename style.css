@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+}
+body{
+    background-color:var(--White);
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+:root{
+--White: hsl(0, 0%, 100%);
+--Pale-blue: hsl(221, 100%, 96%);
+--Light-lavender: hsl(241, 100%, 89%);
+--Dark-gray-blue: hsl(224, 30%, 27%);
+
+--Light-slate-blue : hsl(252, 100%, 67%);
+--Light-royal-blue : hsl(241, 81%, 54%);
+
+--Violet-blue : hsla(256, 72%, 46%, 1);
+--Persian-blue : hsla(241, 72%, 46%, 0);
+
+--Light-red: hsl(0, 100%, 67%);
+--Orangey-yellow: hsl(39, 100%, 56%);
+--Green-teal: hsl(166, 100%, 37%);
+--Cobalt-blue: hsl(234, 85%, 45%);
+}
+.containers{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--White);
+    color: white;
+    margin: 20vh 20vw;
+}
+.containers .box1{
+    display: flex;
+    flex-direction: column;
+    background-color:var(--Violet-blue);
+    border-radius: 10%;
+    width: 280px;
+    gap: 1rem;
+    align-items: center;
+    padding: 40px 0 40px 0;
+}
+.containers .box1 .num{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 30px 60px 0 var(--Cobalt-blue) inset;
+    border-radius: 50% ;
+    padding: 35px;
+    background-color: var(--Light-slate-blue);
+}
+.containers .box1 .num .num2 p{
+   color: rgb(155, 155, 182);
+}
+.containers .box1 .num .num1{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Century Gothic;
+    padding: 0 10px 0 10px;
+
+}
+.containers .box1 .font2{
+    padding: 0 40px 0 40px;
+    text-align: center;
+   font-size: 14px;
+    text-shadow: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.containers .box2{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 40px;
+    color: black;
+    box-shadow: 0px 100px 100px 0px rgba(48, 46, 46, 0.18);
+    border-radius: 20px 20px 20px 0;
+    background-color: var(--White);
+}
+.containers .box2 .content1 ,.content2 ,.content3 ,.content4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200px;
+    
+    padding: 10px;
+    border-radius: 10px;
+}
+.containers .box2 .content1{
+   background-color: hsl(0, 100%, 90%);
+}
+.containers .box2 .content2{
+   background-color: hsl(38, 100%, 90%);
+}
+.containers .box2 .content3{
+   background-color:hsl(165, 82%, 93%);
+}
+.containers .box2 .content4{
+    background-color: var(--Pale-blue);
+}
+.containers .box2 .content1 .Reaction{
+    gap: .5rem;
+    color: var(--Light-red);
+}
+.containers .box2 .content2 .Memory{
+    gap: .5rem;
+    color: var(--Orangey-yellow);
+}
+.containers .box2 .content3 .Verbal{
+    gap: .5rem;
+    color: var(--Green-teal);
+}
+.containers .box2 .content4 .Visual{
+    gap: .5rem;
+    color: var(--Cobalt-blue);
+}
+
+.containers .box2 .content1 .Reaction ,.Memory ,.Verbal ,.Visual{
+    display: flex;
+    flex-direction: row;
+}
+.containers .box2 form input{
+    width: 220px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 20px;
+    background-color:var(--Dark-gray-blue);
+    color: var(--White);
+    cursor: pointer;
+}
+.attribution {
+     font-size: 13px; 
+    text-align: center;
+    position: relative;
+    top: -100px;
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+     text-decoration: none; 
+    }
+    @media  screen and (max-width: 600px) {
+        body{  
+           
+        }
+       .containers{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+       }
+       .containers .box1{
+        width: 100%;
+        border-radius: 0 0 10% 10%;
+       }
+       .containers .box2{
+      
+        padding: 30px;
+        border-radius: 0;
+       }
+      
+       .containers .box2 .content1 ,.content2 ,.content3 ,.content4{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        min-width: 90%;
+        padding: 15px;
+        border-radius: 10px;
+        }
+        .containers .box1 .num .num2 p{
+        color: rgb(155, 155, 182);
+        }
+        .containers .box2 form input{
+        width: 95%;
+        height: 50px;
+        border-radius: 20px;
+        border: none;
+        margin-top: 20px;
+        background-color:var(--Dark-gray-blue);
+        color: var(--White);
+        }
+        .containers .box1 .font2{
+            font-size: 16px;
+          
+        }
+        .attribution {
+        font-size: 13px; 
+        text-align: center;
+        position: relative;
+        top: -20px;
+        }
+        .attribution a {
+        color: hsl(228, 45%, 44%); 
+        text-decoration: none; 
+        }
+      }
